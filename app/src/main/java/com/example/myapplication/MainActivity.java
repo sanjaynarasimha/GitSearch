@@ -139,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void fetchRepositories(String query) {
-        String url = "https://api.github.com/search/repositories?q=" + query;
+        String url = "https://api.github.com/search/repositories?q=" + query + "&per_page=10";
 
         RequestQueue requestQueue = Volley.newRequestQueue(this);
 
